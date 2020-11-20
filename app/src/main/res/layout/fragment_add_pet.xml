@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/add_pet_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <ProgressBar
+                android:id="@+id/loading"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp">
+
+            </ProgressBar>
+        </RelativeLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:padding="10dp"
+            android:text="Pet Name">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/pet_name"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp">
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="10dp"
+                android:text="Pet Category">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/pet_category"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="10dp">
+
+            </Spinner>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="160dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="10dp"
+                android:text="Speciality">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/pet_speciality"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="10dp">
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="220dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Sex">
+
+            </TextView>
+<RadioGroup
+    android:id="@+id/radioGroup"
+    android:layout_width="0dp"
+    android:layout_weight="3"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Male"
+                android:onClick="onRadioButtonClicked">
+
+            </RadioButton>
+
+
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Female"
+                android:onClick="onRadioButtonClicked">
+
+            </RadioButton>
+
+        </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:layout_marginTop="270dp"
+            android:text="Age">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/pet_age"
+            android:layout_marginTop="310dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:inputType="text"
+            android:background="@drawable/edittext_bg"
+            android:hint="x years/x months"
+            android:padding="10dp">
+
+        </EditText>
+
+
+        <TextView
+
+            android:layout_marginTop="360dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:text="Height">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/pet_height"
+            android:layout_marginTop="400dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:inputType="text"
+            android:background="@drawable/edittext_bg"
+            android:hint="x Inches/x cm/x feet"
+            android:padding="10dp">
+
+        </EditText>
+
+        <TextView
+
+            android:layout_marginTop="450dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:text="Weight">
+
+        </TextView>
+
+        <EditText
+            android:layout_marginTop="490dp"
+            android:id="@+id/pet_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:inputType="text"
+            android:hint="x Kg/x g"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp">
+
+        </EditText>
+        <TextView
+
+            android:layout_marginTop="540dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:text="Place">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/pet_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+
+            android:layout_marginTop="580dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp">
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_marginTop="630dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Add a Photo">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/cam"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="cam1"
+                android:padding="20dp"
+                android:src="@drawable/ic_photo_camera_black_24dp"
+
+                >
+
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_marginTop="830dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:text="Description">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/pet_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_marginTop="870dp"
+            android:background="@drawable/edittext_bg"
+            android:baselineAligned="false"
+            android:inputType="textMultiLine"
+            android:padding="10dp">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/add_pet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="930dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_bg"
+            android:elevation="10dp"
+            android:text="Confirm"
+            android:textColor="@color/text"
+            android:onClick="confirm">
+
+        </Button>
+
+
+    </RelativeLayout>
+</ScrollView>

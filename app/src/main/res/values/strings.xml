@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Paw</string>
+    <string name="make_a_new_friend">Make a new Friend</string>
+    <string name="adopt_a_pet">Adopt Pet Today</string>
+    <string name="search_for_a_pet">Search for a Pet</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="dogs">Dogs</string>
+    <string name="search">Search</string>
+    <string name="cats">Cats</string>
+
+
+    <string-array name="pet_category">
+        <item>-SELECT-</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Bird</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="dog_array">
+        <item>German Shepherd</item>
+        <item>Labrador Retriever</item>
+        <item>Rottweiler</item>
+        <item>Shihtsu</item>
+        <item>Beagle</item>
+        <item>Pomeranian</item>
+        <item>Bichon Frise</item>
+        <item>Golden Retriever</item>
+        <item>Samoyed</item>
+    </string-array>
+    <string-array name="cat_array">
+        <item>Persian</item>
+        <item>cat1</item>
+
+    </string-array>
+</resources>

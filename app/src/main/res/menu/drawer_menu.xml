@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:compat="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    compat:showAsAction="ifRoom">
+<group android:checkableBehavior="single">
+    <item android:id="@+id/nav_adoption"
+        android:title="Adoption"
+        android:icon="@drawable/ic_paw"></item>
+
+    <item android:id="@+id/nav_addPet"
+        android:title="Add a Pet"
+        android:icon="@drawable/ic_add"></item>
+
+    <item android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person"></item>
+
+</group>
+
+</menu>

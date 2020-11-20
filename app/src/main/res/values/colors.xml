@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F68925</color>
+    <color name="colorPrimaryDark">#F68925</color>
+    <color name="colorAccent">#F68925</color>
+    <color name="lightPrimaryColor">#FFD256</color>
+    <color name="text">#FFFFFF</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="dividerColor">#D6D6D6</color>
+    <color name="dividerColor2">#ECECEC</color>
+    <color name="edittext">#FA80CF</color>
+    <color name="success">#2ecc71</color>
+    <color name="cancel">#ff3f34</color>
+</resources>
